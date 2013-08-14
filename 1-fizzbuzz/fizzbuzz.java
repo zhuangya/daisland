@@ -10,22 +10,17 @@ class FizzBuzz {
     // strange syntax in java for me :P
     ArrayList<String> result = new ArrayList<String>();
     for(int x = 1; x < 101; x = x + 1) {
-      String item = "";
-
       // maybe this is kind of stupid, no?
       if(x % 15 == 0) {
-        item = "FizzBuzz";
+        result.add("FizzBuzz");
       } else if (x % 3 == 0) {
-        item = "Fizz";
+        result.add("Fizz");
       } else if (x % 5 == 0) {
-        item = "Buzz";
+        result.add("Buzz");
       } else {
-        // LOL, familar `toString()`
-        item = new Integer(x).toString();
+        // This **is** javascript! i mean it!
+        result.add("" + x);
       }
-
-      // in fact, i prefer `.push(item)` here rather than `add(item)`
-      result.add(item);
     }
 
     // i know, i need a better way to test it, but how?
