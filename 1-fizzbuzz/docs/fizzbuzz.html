@@ -52,8 +52,7 @@
             </div>
             
             <div class="content"><div class='highlight'><pre>    ArrayList&lt;String&gt; result = <span class="keyword">new</span> ArrayList&lt;String&gt;();
-    <span class="keyword">for</span>(<span class="keyword">int</span> x = <span class="number">1</span>; x &lt; <span class="number">101</span>; x = x + <span class="number">1</span>) {
-      String item = <span class="string">""</span>;</pre></div></div>
+    <span class="keyword">for</span>(<span class="keyword">int</span> x = <span class="number">1</span>; x &lt; <span class="number">101</span>; x = x + <span class="number">1</span>) {</pre></div></div>
             
         </li>
         
@@ -69,11 +68,11 @@
             </div>
             
             <div class="content"><div class='highlight'><pre>      <span class="keyword">if</span>(x % <span class="number">15</span> == <span class="number">0</span>) {
-        item = <span class="string">"FizzBuzz"</span>;
+        result.add(<span class="string">"FizzBuzz"</span>);
       } <span class="keyword">else</span> <span class="keyword">if</span> (x % <span class="number">3</span> == <span class="number">0</span>) {
-        item = <span class="string">"Fizz"</span>;
+        result.add(<span class="string">"Fizz"</span>);
       } <span class="keyword">else</span> <span class="keyword">if</span> (x % <span class="number">5</span> == <span class="number">0</span>) {
-        item = <span class="string">"Buzz"</span>;
+        result.add(<span class="string">"Buzz"</span>);
       } <span class="keyword">else</span> {</pre></div></div>
             
         </li>
@@ -85,12 +84,13 @@
               <div class="pilwrap ">
                 <a class="pilcrow" href="#section-4">&#182;</a>
               </div>
-              <p>LOL, familar <code>toString()</code></p>
+              <p>This <strong>is</strong> javascript! i mean it!</p>
 
             </div>
             
-            <div class="content"><div class='highlight'><pre>        item = <span class="keyword">new</span> Integer(x).toString();
-      }</pre></div></div>
+            <div class="content"><div class='highlight'><pre>        result.add(<span class="string">""</span> + x);
+      }
+    }</pre></div></div>
             
         </li>
         
@@ -100,22 +100,6 @@
               
               <div class="pilwrap ">
                 <a class="pilcrow" href="#section-5">&#182;</a>
-              </div>
-              <p>in fact, i prefer <code>.push(item)</code> here rather than <code>add(item)</code></p>
-
-            </div>
-            
-            <div class="content"><div class='highlight'><pre>      result.add(item);
-    }</pre></div></div>
-            
-        </li>
-        
-        
-        <li id="section-6">
-            <div class="annotation">
-              
-              <div class="pilwrap ">
-                <a class="pilcrow" href="#section-6">&#182;</a>
               </div>
               <p>i know, i need a better way to test it, but how?</p>
 
